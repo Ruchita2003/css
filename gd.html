@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid|css</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            background-color: black;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .container{
+            width: 80%;
+            display: grid;
+            grid-template-areas:" hl hl hl hr"
+                                "sl sm sm sr"
+                                "ml ml mr mr"
+                                "tl tm tm tr" ;
+            
+            gap: 15px 15px;
+     
+            
+
+        }
+        .b1{
+            grid-area: hl;
+            background-image: url(https://img.freepik.com/free-photo/peaceful-cute-horses-nature_23-2149066264.jpg?w=1060&t=st=1693300092~exp=1693300692~hmac=fdf505b94dfe172dec5dac7b0f6ca498e89241c7985c4917ebf598068ea598d5); 
+             background-repeat: no-repeat;
+            background-size: 100%;
+        
+            height: 200px;
+            
+            background-position: center center;
+        
+        }
+        .b1 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b2{
+            grid-area: hr;
+            background-image: url(https://img.freepik.com/free-photo/beautiful-winter-day_181624-30467.jpg?w=1060&t=st=1693300183~exp=1693300783~hmac=4a61c0986b17afdafca3158f910c6de8f98845fff4629c3b42cbfd278a2c6582) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            
+        }
+        .b2 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b3{
+            grid-area: sl;
+            background-image: url(https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?size=626&ext=jpg&ga=GA1.1.1138088027.1687031625&semt=sph);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            
+        }
+        .b3 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b4{
+            grid-area: sm;
+            background-image: url(https://img.freepik.com/free-photo/group-diverse-grads-throwing-caps-up-sky_53876-56031.jpg?w=1060&t=st=1693300280~exp=1693300880~hmac=af860032ba4e20c481aee0c57657af7fbac398c8fb4d6e9609768fcc760868a4);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            
+        }
+        .b4 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b5{
+            grid-area: sr;
+            background-image: url(https://img.freepik.com/free-photo/dessert-indulgence-gourmet-chocolate-ice-cream-waffle-cone-generative-ai_188544-12421.jpg?w=1380&t=st=1693300583~exp=1693301183~hmac=0f733c0e1d143263b9f726a821cfae959a1de230670ee920d4a491c7a22e2ab3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            
+        }
+        .b5 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b6{
+            grid-area: ml;
+            background-image: url(https://img.freepik.com/free-photo/dessert-indulgence-gourmet-chocolate-ice-cream-waffle-cone-generative-ai_188544-12421.jpg?w=1380&t=st=1693300583~exp=1693301183~hmac=0f733c0e1d143263b9f726a821cfae959a1de230670ee920d4a491c7a22e2ab3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+        }
+        .b6 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b7{
+            grid-area: mr;
+            background-image: url(https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-1934.jpg?w=1060&t=st=1693300680~exp=1693301280~hmac=56c37b90c36a25dfb6500c106f8975c0c13fda468733cc1f83e9d9a72d5f640f);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 200px;
+        }
+        .b7 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b8{
+            grid-area: tl;
+            background-image: url(https://img.freepik.com/free-photo/happy-bunny-with-many-easter-eggs-grass-festive-background-decorative-design_90220-1091.jpg?w=1060&t=st=1693300780~exp=1693301380~hmac=737594b24cd1d37a58e35cab3c83c9998575dc6f4597899497c6a8e1a9cab536);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 200px;
+        }
+        .b8 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b9{
+            grid-area: tm;
+            background-image: url(https://img.freepik.com/free-photo/office-skyscrapers-business-district_107420-95733.jpg?w=1060&t=st=1693300978~exp=1693301578~hmac=7784a73938c438863d27422b4a386069f5260bd76e44ae7d1a237a4a50cac76d);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 200px;
+        }
+        .b9 img{
+            height: inherit;
+            width: 100%;
+        }
+        .b10{
+            grid-area: tr;
+            background-image: url(https://img.freepik.com/free-photo/side-view-latte-coffee-with-sugar_141793-4987.jpg?w=740&t=st=1693301037~exp=1693301637~hmac=1bfc1352774d6a8878e2221b7b1daa7eb60cb2771b21cecb671920cfe991a97e);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 200px;
+        }
+        .b10 img{
+            height: inherit;
+            width: 100%;
+        }
+        .main{
+        margin-right: 30px;
+        text-align: right;
+       }
+        
+       .hd h2{
+        color: white;
+        text-decoration-line: none;
+        /* padding-right: 20px; */
+       }
+       
+       .an a{
+        text-decoration-line: none;
+        color: white;
+        display: block;
+        padding-top: 20px;
+       }
+       .an a:nth-child(1){
+        color: red; 
+       } 
+       .ft i{
+        padding-top: 30px;
+        padding-left: 20px;
+       }
+       .an a{
+        transform: rotateX(0deg);
+       }
+       .an a:hover{
+        color: red;
+        transition: all 0.5s linear;
+        transform:  rotateX(360deg)
+       
+       }
+      
+       
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="b1"> </div><!--b1 end  -->
+        <div class="b2"> </div><!--b1 end  -->
+        <div class="b3"> </div><!--b1 end  -->
+        <div class="b4"> </div><!--b1 end  -->
+        <div class="b5"> </div><!--b1 end  -->
+        <div class="b6"> </div><!--b1 end  -->
+        <div class="b7"> </div><!--b1 end  -->
+        <div class="b8"> </div><!--b1 end  -->
+        <div class="b9"> </div><!--b1 end  -->
+        <div class="b10"> </div><!--b1 end -->
+
+
+
+
+      
+   
+
+        
+     </div> <!--conatiner end  -->
+
+     <div class="main">
+        <div class="hd"><h2>SHUTTER</h2></div>  <!--Header div end here -->
+
+        <div class="an">
+            <a href="">HOME</a>
+            <a href="">PHOTOS</a>
+            <a href="">BIO</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+
+        </div>  <!--anchors div end here -->
+   <div class="ft">
+        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    </div> <!-- footer div end-->
+    
+     </div>  <!--main div end here -->
+    </section>
+    
+    
+  
+</body>
+</html>

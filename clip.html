@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>clip-path|css</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color:black ;
+    }
+  .section{
+     width: 100%;
+     height: 100vh;
+     background-image:url(https://img.freepik.com/premium-photo/purple-balloons-purple-background_670382-9530.jpg?w=740);
+     background-repeat: no-repeat;
+     background-size: cover; 
+     clip-path: polygon(100% 0%, 0% 0%, 0% 80%,50% 100%, 100% 80%);    
+  }
+  .section .s1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .section .s1 .left{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    color: lightgray;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .section .s1 .left .l{
+    background-color: white;
+    color: darkgray;
+    width: 45px;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .section .s1 .left .ogo{
+    padding: 0 5px;
+    color: aqua;
+
+  }
+  .section .s1 .right{
+    width: 50%;
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  .section .s1 .right .h{
+    color: aliceblue;
+    padding: 0px 20px;
+    font-weight: 300;
+    }
+  .section .s1 .right .home{
+    color: aliceblue;
+    padding: 0px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    }   
+  .section .last{
+    width: 100%;
+    margin-top:10% ;
+    display: flex;
+    justify-content: space-between;
+    }
+  .section .last .one{
+   width: 33%;
+   } 
+  .section .last .t{
+    color: aliceblue;
+    width: 35%;            
+    }
+  .section .last .t h4{
+    text-align: center;
+    margin-bottom: 10px;
+        }
+  .section .last .t h1{
+    letter-spacing: 5px;
+    text-align: center; 
+    }
+  .section .last .t p{
+    text-align: center;
+    font-size: 15px;
+    margin: 15% 0 15% 0;
+    }
+  .section .last .t a{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    }
+  .now{
+    text-decoration: none;
+    padding: 20px;
+    background-color: lightcoral
+    }
+  .more{
+    text-decoration: none;
+    padding: 20px 45px;
+    margin-left: 30px;
+    border: 2px solid white;
+  }
+  .section .last .three{
+    width: 35%;
+   }
+   .art .b{
+    width: 18%;
+    height: 20vh;
+    padding: 20px;
+    margin-top: 8%;
+    text-align: center;
+    color: #333;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+  .art .b p{
+  padding: 10px;
+  }
+ .b .sleek{
+  color:  rgb(212, 54, 54); 
+  }
+  .b h3:hover{
+  color: rgb(212, 54, 54);
+  font-size: 25px;
+  }
+  .art{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+  .art .b .bx{
+  background-color: transparent;
+  border:2px solid #333;
+  width: 90px;
+  min-height: 90px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .art .b .bx2{
+  transform: rotate(50deg);
+  }
+ .art .b .bx .fa{
+  font-size: 22px;
+  color: rgb(212, 54, 54);
+  }
+  .art .b .bx:hover{
+   transform: scale(1.5);
+  }
+  .art .b .p{
+    color: grey;
+  }
+</style>
+</head>
+<body>
+<div class="section">
+<div class="s1">
+    <!-- fast content -->
+    <div class="left">
+      <div class="l">L</div>
+      <div class="ogo">ogo</div>
+    </div>
+    <div class="right">
+     <a class="h" href="#">HOME</a>
+     <a class="home" href="#">ABOUT US</a>
+     <a class="home" href="#">PORTFOUO</a>
+     <a class="home" href="#">PRICING</a>
+     <a class="home" href="#">TEAM</a>
+     <a class="home" href="#">BLOG</a>
+     <a class="home" href="#">CONTACT</a>
+    </div>
+  </div>
+
+<!-- seconde content -->
+  <div class="last">
+    <div class="one">
+        <FontAwesomeIcon icon="fa-duotone fa-angle-left" />
+    </div>
+    <div class="t">
+        <h4>Our Clients Are Our First Priority</h4>
+        <h1>WELCOME TO SKY</h1>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem repudiandae sunt minus ipsum cum. Expedita quam delectus   distinctio ab architecto modi dolor!  possimus. Eligendi quam molestias earum adipisci! Quos magni ea ipsa doloremque nesciunt, sint facilis quaerat saepe?</p>
+
+        <a href="#" class="now">GET STARTED NOW</a>
+        <a href="#" class="more">LEARN MORE</a>
+    </div>
+    <div class="three">
+      <i class="fa-duotone fa-chevron-right"></i>
+  </div>
+  </div>
+</div>
+  <!-- last content -->
+  <div class="art">
+    <div class="b">
+        <div class="bx bx2">
+            <i class="fa fa-glasses"></i>
+        </div>
+        <h3 class="sleek">SLEEK DESIGN</h3>
+        <p>___</p>
+        <p class="p">Lorem ipsum dolor sit beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="b">
+        <div class="bx bx2">
+            <i  class="fa fa-heart"></i>
+        </div>
+        <h3>CLEAN CODE</h3>
+        <p>___</p>
+        <p class="p">Lorem ipsum dolor sit beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="b">
+        <div class="bx bx2">
+            <i class="fa fa-lightbulb"></i>
+        </div>
+        <h3>CREATIVE IDEAS</h3>
+        <p>___</p>
+        <p class="p">Lorem ipsum dolor sit  beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+    </div>
+    <div class="b">
+        <div class="bx bx2">
+            <i class="fa fa-comments"></i>
+        </div>
+        <h3>FREE SUPPORT</h3>
+        <p>___</p>
+        <p class="p">Lorem ipsum dolor sit  beatae cum enim ab ipsam voluptatem vitae aut! Numquam, nesciunt.</p>
+     </div>
+  </div>
+</body>
+</html>

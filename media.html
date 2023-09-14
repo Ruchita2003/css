@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media|css </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: 2% auto;
+            /* background-color: aqua; */
+
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            /* align-content: center; */
+            align-items: center;
+            justify-content: space-between;
+        }
+        .team{
+            
+        }
+        .anchors{
+            width: fit-content;
+            /* padding-left: 120px; */
+        }
+        .anchors a{
+            padding-left: 30px;
+            text-decoration-line: none;
+        }
+        .loginMain{
+            width: fit-content;
+            /* padding: 50px; */
+            display: flex;
+            align-items: center;
+
+        }
+        .loginButton a{
+            /* width: 50%; */
+            text-decoration-line: none;
+
+        }
+        .getStarted{
+            /* width: 50%; */
+            /* height: 50px; */
+            background-color: #ECE5FF;
+            margin-left: 40px;
+            padding: 8px 20px;
+
+        }
+        .getStarted a{
+            text-decoration-line: none;
+            color: rgb(22, 22, 225);
+
+
+        }
+        /* css for second line  */
+        .main{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            
+            
+        }
+        .save{
+            height: 35px;
+            background-color:#81C43B;
+            color: white;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .save h3{
+            padding: 8px 20px;
+        }
+        .getAccount{
+            background-color:#F2F9EB;
+            border-radius: 20px;
+            
+            
+        }
+        .getAccount p{
+            font-family: Inter;
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+        /* CSS for third line  */
+        .thirdMain{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .ManageTeam{
+            text-align: center;
+        }
+        .ManageTeam h1{
+            Font-family: Inter;
+            Font-style: Semi Bol;
+            Font-size: 64px;
+        }
+        .text{
+            padding-top: 20px;
+
+        }
+        .text p{
+            text-align: center;
+        }
+        .Tryit{
+            text-align: center;
+            padding-top: 20px;
+            height: 50px;
+
+        }
+        .Tryit input{
+            width: fit-content;
+            height: inherit;
+        }
+        .Tryit span{
+            color: white;
+            padding: 10px 25px;
+            background-color: #794CFF;
+            
+        }
+        /* CSS for image  */
+        .image{
+        
+        margin-top: 30px;
+        }
+        .image img{
+            height: auto;
+            width: 100%;
+        }
+        /* CSS for 4th line */
+        .TrustedBy{
+            width: 100%;
+            margin-top: 60px;
+
+        }
+        .TrustedBy p {
+            text-align: center;
+            Font-family: Inter;
+            Font-style: Mixed;
+            Font-size: 16px;
+        }
+        /* CSS for google and other images */
+        .ImageMain{
+            margin-top: 20px;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .google{
+            width: 20%;
+        }
+        .ImageMain img{
+            height: inherit;
+            width: 100%;
+            margin-top: 60px;
+        }
+        .airbnb{
+            width: 20%;
+        }
+        .airbnb img{
+            height: inherit;
+            width: 100%;
+        }
+        .facebook{
+            width: 20%;
+        }
+        .facebook img{
+            height: inherit;
+            width: 100%;
+        }
+        .hubspot{
+            width: 20%;
+
+        }
+        .hubspot img{
+            height: inherit;
+            width: 100%;
+        }
+       .slack{
+        width: 20%;
+       }
+       .slack img{
+        height: inherit;
+        width: 100%;
+       }
+
+       /* CSS for 5th line  */
+       .SurveyMain{
+        width: 100%;
+
+        /* height: 600px; */
+        display: flex;
+        margin-top: 90px;
+       }
+       .left{
+        width: 60%;
+        height: 350px;
+  
+
+       }
+       .left img{
+        height: inherit;
+        width: 100%;
+       }
+       .right{
+        width:40% ;
+        display: flex;
+        flex-direction: column;
+
+       }
+       .Survey{
+        /* margin-bottom: 10px; */
+        background-color: rgb(238 238 238);
+        border-left: 5px solid #794CFF;
+        padding: 20px;
+
+       }
+       .reslove{
+        /* margin-bottom: 10px; */
+        padding: 20px;
+       }
+       .plan{
+        /* margin-bottom: 10px; */
+        padding: 20px;
+       }
+       .track{
+        /* margin-bottom: 10px; */
+        padding: 20px;
+       }
+       /* CSS for 6th line make your work  */
+       .makeyourwork{
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+    
+       }
+       .makeyourwork h2{
+        Font-family: Inter;
+        Font-style: Semi Bold;
+        Font-size: 40px;
+       }
+
+       /* CSS for grid is below  */
+       .GridMain{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+       .div1{
+        padding-top: 50px;
+        width: 32%;
+        height: 175px;
+       }
+       .box1{
+        width: 50px;
+        height: 50px;
+        background-color: #FEF6EE;
+        margin-bottom: 20px;
+        border-radius: 24px;
+       }
+       .div2{
+        width: 32%;
+        height: 175px;
+        padding-top: 50px;
+        
+
+
+       }
+       .box2{
+        width: 50px;
+        height: 50px;
+        background-color: #E8FAFA;
+        margin-bottom: 20px;
+        border-radius: 24px;
+
+
+       }
+       
+       .div3{
+        width: 32%;
+        height: 175px;
+        padding-top: 50px;
+    
+
+        
+       }
+       .box3{
+        width: 50px;
+        height: 50px;
+        background-color: #F7EBF9;
+        margin-bottom: 20px;
+        border-radius: 24px;
+
+
+       }
+       .div4{
+        width: 32%;
+        height: 175px;
+        padding-top: 50px;
+
+        
+       }
+       .box4{
+        width: 50px;
+        height: 50px;
+        background-color: #FFEFF3;
+        margin-bottom: 20px;
+        border-radius: 24px;
+
+
+       }
+       .div5{
+        width: 32%;
+        height: 175px;
+        padding-top: 50px;
+
+        
+       }
+       .box5{
+        width: 50px;
+        height: 50px;
+        background-color: #EDE8F7;
+        margin-bottom: 20px;
+        border-radius: 24px;
+
+
+       }
+       .div6{
+        width: 32%;
+        height: 175px;
+        padding-top: 50px;
+        
+       }
+       .box6{
+        width: 50px;
+        height: 50px;
+        background-color: #FEF5EC;
+        margin-bottom: 20px;
+        border-radius: 24px;
+
+
+       }
+/* CSS  for we work every day  */
+.everydayMain{
+    width: 100%;
+    height: auto;
+    background-color: #F0EBFA;
+    margin-top: 90px;
+    display: flex;
+}
+.everyLeft{
+    width: 50%;
+    padding-bottom: 80px;
+}
+.everyLeft h2{
+    padding-top: 90px;
+    font-family: Inter;
+font-size: 40px;
+font-weight: 600;
+
+}
+.everyLeft p{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+
+
+}
+.everyLeft span{
+    background-color: #796EFF;
+    color: white;
+    padding: 10px 25px;
+}
+
+.everyRight{
+    width: 50%;
+    padding-bottom: 80px;
+
+}
+.everyRight img{
+    height: inherit;
+    width: 100%;
+}
+
+/* CSS for why customer lovw me  */
+
+.customerMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.upper{
+padding-bottom: 30px;
+}
+.upper h2{
+    font-family: Inter;
+font-size: 40px;
+font-weight: 600;
+}
+.lower p{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 60px;
+
+
+
+}
+
+/* CSS for jorge tabs  */
+
+.jorgeMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tab1{
+    width: 25%;
+    display: flex;
+    border-top: 5px solid black;
+    padding-top: 20px;
+}
+.Pbox1{
+    width: 50px;
+    height:50px;
+    margin-right: 10px;
+}
+.Pbox1 img{
+    height: inherit;
+    width: 100%;
+    /* padding-right: 30px; */
+    border-radius: 30px;
+
+}
+.tab2{
+    width: 25%;
+    display: flex; 
+    padding-top: 20px;
+
+}
+
+/* CSS for Blue div  */
+.blueMain{
+    width: 100%;
+    background-color: #794CFF;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.blueLeft{
+    width: 45%;
+}
+.blueLeft h2{
+    font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+color: white;
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;
+
+
+}
+.blueRight{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.playstore{
+    height:50px;
+    width: 175px;
+    padding-left: 25px;
+}
+
+.playstore img{
+    height: 40px;
+    width: 100%;    
+}
+.footer{
+    width: 100%;
+    display: flex;
+    margin-top: 90px;
+
+}
+.Fbox1{
+    width: 25%;
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+.Fbox1 h6{
+    color: white;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+padding-bottom: 30px;
+
+
+}
+.Fimage{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+}
+.footerplay{
+    height: 50px;
+    width: 100%; 
+}
+.Fimage h6{
+    color: white;
+    font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 16px;
+padding-bottom: 20px;
+
+
+}
+.footerplay img{
+    height: inherit;
+    width: 100%;
+    
+}
+
+
+.footerStore{
+    height: 60px;
+    width: 100%; 
+}
+.footerStore img{
+    height: inherit;
+    width: 100%;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:1300px) {
+    .SurveyMain{
+        display: block;
+        flex-direction: column;
+    }
+    .SurveyMain .left{
+        /* width: 100%; */
+    }
+    }
+
+@media screen and (max-width:1093px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+    .anchors{
+        margin: 20px 0px;
+    }
+
+
+    }
+
+    
+
+    @media screen and (max-width:850px){
+        .GridMain{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           
+        
+
+        }
+        .everydayMain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .blueMain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <!-- this below div is for whole webpage as container -->
+    <div class="container">
+
+     <div class="header">
+        <div class="team"><h2>team.flow</h2></div>
+        <div class="anchors">
+            <a href="">How it Works</a>
+            <a href="">Product</a>
+            <a href="">Pricing</a>
+            <a href="">Resources</a>
+
+
+        </div>
+        <div class="loginMain">
+            <div class="loginButton">
+                <a href="">Log in</a>
+            </div>
+            <div class="getStarted"><a href="">Get started free</a></div>
+        </div>
+     </div>
+     <!-- code for second line -->
+     <div class="main">
+        <div class="save"><h3>Save 90%</h3></div>
+        <div class="getAccount"><p>Get account of $59</p></div>
+     </div>
+     <!-- code for Third line -->
+     <div class="thirdMain">
+        <div class="ManageTeam">
+            <h1>Manage the team <br>
+                everyone wants to be on</h1>
+        </div>
+        <div class="text"><p>Simple platform that lets you master what great managers do best, <br>
+            as develop trust, collaborate, and drive team performance.</p></div>
+        <div class="Tryit">
+            <!-- <textarea cols="45" rows="3" placeholder="name@yourcompany.com"></textarea> -->
+            <input type="text" placeholder="name@yourcompany.com" size="30" >
+            <span>Try it free</span>
+        </div>
+        <!-- latest add  -->
+      </div>  
+        <!-- code for image  -->
+        <div class="image">
+            <img src="https://s3-alpha-sig.figma.com/img/39e1/923f/13d450236ee55a682dd1e900494e741e?Expires=1688342400&Signature=cpbMxNapEXZZfpDGeIuCunI1XRJR3ECGKEtQbH-tU87Ps~ES8iPoTPsEVzO075sD0BKIYbNasbwb0tw2DFoXCM66HI6V7uL7WC9yZV~-ro0-15jnZ9gpPCHY1rI3ros6vbP3zB9czlFlr7dY8ZTWqVzgIO9PDqbd6fL~Dre~UNPr~3E7Gm6E2xkY0GXU~vI764udr3x4wAjk7fiL7B6UUDeuGzP9eDsEh-fOhyZl-1HyQe90q3jYF8YRH1K1nHWXB5xL7TY7OJP5M~Z223KzI~qf9W7M2IUnvkkeg9OjDi2ipX5BHRIavX1SLjj-5s2UNf6cHMVuy9RwigAUmCueMg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="image">
+        </div>
+     
+     <!-- code for 4th line -->
+     <div class="TrustedBy"><p>TRUSTED BY OVER 10.000+ WORLD’S BEST TEAMS</p></div>
+    
+    
+     <!-- code for google and other images -->
+     <div class="ImageMain">
+        <div class="google"><img src="data:image/png;base64,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" alt="google">
+        </div>
+        <div class="airbnb">
+            <img src="data:image/png;base64,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" alt="airbnb">
+        </div>
+        <div class="facebook">
+            <img src="data:image/png;base64,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" alt="facebook">
+        </div>
+        <div class="hubspot">
+            <img src="data:image/jpeg;base64,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" alt="hubspot">
+        </div>
+        <div class="slack">
+            <img src="data:image/jpeg;base64,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fFlcJGubYjMAQMzT8pup0uFSmL7psRpyeyZHUt5Oika11u9r7G/hddFog5XdsRiQdl9Aqb90RI940Ul2b3S1lS9pqwKSMEZszmvlcOYa1pIB73Wt0K6DRBrqLDGUtIKWnZlbHGWMb5HUnmSdSepXO3/DPFf7k7/zU/8AWumkQQzdZg89BhogqozE/tnuylzHeq7LY3aSOqydt9i4cYiDXHs5YwezmAuW3+a4fObflyUqRBzPi27XEqV5Hozp2jhJARI13l8oeYXmE7tcSqngejOgaeMk5EbW99vlHyC6ZRBz9tJuqq4ZYWUMLqlogaXzZ4mB0uZ2azXOBAtlt+1bPdpsVX0OKRVNTTGONrHguMkLrFzHACzXE8e5XciD5yxNe1zHtDmuBa5rgC1wIsQQeIsqb2v3PvL3TYW5pa7X0WR2UtPRjzoR3OtbqVdCIOWpthMSY7K6gqCf8LM7f0m3H61vcB3TV9S4Goa2kZfV0ha55H+FjSdfEhdEIg0uzOzsGF04gpm2HynvOr5XW+U4/dwCqveZsTX12KTVFLSmSNzWAPEsLblrGg6OcDx7ldyIKd3TbH1uH4hJNV05iY6ldGHF8T7uL4yBZrieAPuVoY9g0WIU0lLO27Hjjpma4cHtPIgrZIg5urt1uJRyvZHTds1riGytkha145ODXPBHgVLd2+FYvhE/Zy0b3U0zhnZ21OTG7h2rRn49RzA6gK5EQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB+kREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/2Q==" alt="slack">
+        </div>
+        </div>
+        <!-- code for 5th line  Survey your team -->
+        <div class="SurveyMain">
+            <div class="left">
+              <img src="https://img.freepik.com/premium-photo/women-s-hand-typing-mobile-smartphone-live-chat-chatting-application-communication-digital-web-social-network-concept-work-from-home_52701-153.jpg?size=626&ext=jpg&ga=GA1.1.1138088027.1687031625&semt=ais" alt="">
+
+            
+            </div>
+            <div class="right">
+                <div class="Survey"><h3>Survey your team</h3><p>Powerful questions that get to the heart of how team members really feel.</p></div><hr>
+                <div class="reslove"><h3>Resolve issues quickly</h3><p>Anonymous messaging that connects managers and employees.</p></div><hr>
+                <div class="plan"><h3>Plan your 1-on-1s</h3><p>Plan meetings together and give a stake
+                    employees and teams.</p></div><hr>
+                <div class="track"><h3>Track your progress</h3><p>Easy-to-read reports and sharable results help managers and teams.</p></div><hr>
+
+            </div>
+        </div>
+     
+        <!-- code for 6th line make your work  -->
+      <div class="makeyourwork">
+        <h2>Make your work easier</h2>
+      </div>
+
+      <!-- code for grid div  -->
+      <div class="GridMain">
+        <div class="div1">
+            <div class="box1"><i class="fa-sharp fa-solid fa-signal-bars" style="color: #f70202;"></i></div>
+            <h3>Team Surveys & Reports</h3>
+            <p>Short, anonymous surveys track your team’s needs weekly so you can focus.</p>
+        </div>
+        <div class="div2">
+            <div class="box2"></div>
+
+            <h3>Collaborative 1:1 </h3>
+            <p>Build relationships by planning
+                1-on-1s and start meetings.</p>
+        </div>
+        <div class="div3">
+            <div class="box3"></div>
+
+            <h3>Learning Center</h3>
+            <p>Quickly get solutions tailored to your personal challenges from the manager.</p>
+        </div>
+        <div class="div4">
+            <div class="box4"></div>
+
+            <h3>Anonymous Messaging</h3>
+            <p>Develop trust in a safe channel for important conversations.</p>
+        </div>
+        <div class="div5">
+            <div class="box5"></div>
+
+            <h3>Conversation Engine</h3>
+            <p>Communicate confidently with
+                recommended talking points.</p>
+        </div>
+        <div class="div6">
+            <div class="box6"></div>
+
+            <h3>Exclusives Manager</h3>
+            <p>Access manager tips, activities and
+                best practices from our team of experts.</p>
+        </div>
+
+     </div>
+   
+    </div>
+<!-- code for work everyday is below  -->
+<section style="background-color: #F0EBFA;">
+<div class= "container">
+<div class="everydayMain">
+    <div class="everyLeft">
+        <h2>We work how you <br>
+            work everyday</h2>
+            <p>Since the easiest things to use actually get used, we adapts to the way your team works – not the other way around.</p>
+            <span>Get started free</span>
+    </div>
+    <div class="everyRight">
+        <img src="  https://img.freepik.com/free-photo/flat-lay-statistics-presentation-with-chart_23-2149023811.jpg?size=626&ext=jpg&ga=GA1.1.1138088027.1687031625&semt=ais" alt="image">
+    </div>
+</div>
+</section>
+<!-- code for why customer love is below  -->
+<div class="container">
+<div class="customerMain">
+    <div class="upper"><h2>Why customers love <br>
+        working with us</h2></div>
+    <div class="lower"><p>“It's amazing what has helped me learn about my team. <br>
+        I don't worry about blindspots anymore, and 1-on-1s have never<br>
+        been more productive. The team loves it.”</p></div>
+</div>
+</div>  <!--  container div end  -->
+
+<!-- code for jorge robert divs  -->
+ <div class="container">
+    <div class="jorgeMain">
+        <div class="tab1">
+            <div class="Pbox1"><img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="profile"></div>
+           <div class="div"> <h3>Jorge Robertson</h3>
+             <p>CS at Google</p></div> <!--this div is to do coloumn fkex in tab1 -->
+        </div>
+        <div class="tab2">
+            <div class="Pbox1"><img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="profile"></div>
+           <div class="div"> <h3>Francisco Bell</h3>
+             <p>Designer at Microsoft</p></div> <!--this div is to do coloumn fkex in tab1 -->
+        </div>
+        <div class="tab2">
+            <div class="Pbox1"><img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="profile"></div>
+           <div class="div"> <h3>Beth Fox</h3>
+             <p>Developer at Airbnb</p></div> <!--this div is to do coloumn fkex in tab1 -->
+        </div>
+
+        
+    </div>
+
+
+ </div><!-- container div end here  -->
+
+ <!-- code for blue div  -->
+<div class="container">
+ <div class="blueMain">
+    <div class="blueLeft">
+        <h2>84% of employees who use <br>
+            trust their direct manager</h2>
+    </div>
+    <div class="blueRight">
+        <!-- <img src="D:\Html\images\playStore.PNG" alt="playstore"> -->
+        <div class="playstore">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="playstore"></div>
+        <!-- this div is only create to give flex coloumn -->
+        <div class="playstore">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="">
+        </div>
+ </div>
+ </div> <!--container close -->
+<!-- code for footer  -->
+ <section style="background-color: #1D2830;">
+
+    <div class="container" >
+    <div class="footer">
+        <div class="Fbox1">
+            <h6>Company</h6>
+            <h6>About Us</h6>
+            <h6>Blog</h6>
+            <h6>Careers</h6>
+            <h6>Contact Us</h6>
+
+
+        </div>
+        <div class="Fbox1">
+            <h6>Support</h6>
+            <h6>Help Center</h6>
+            <h6>Safety Center</h6>
+            <h6>Community</h6>
+          
+
+
+        </div>
+        <div class="Fbox1">
+            <h6>Legal</h6>
+            <h6>Cookies Policy</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Terms of Service</h6>
+           
+
+        </div>
+
+        <div class="Fimage">
+            <h6>Install App</h6>
+            <div class="footerplay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt=""></div>
+            <div class="footerStore">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt=""></div>
+           
+           
+
+        </div>
+        
+    </div>
+   
+ </div> <!--cantainer close here  -->
+ </section>
+</body>
+</html>
